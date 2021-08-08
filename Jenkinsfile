@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Update Ubuntu') {
             steps {
-                sh 'sudo apt-get update'
+                sh 'sudo yum update'
             }    
         }
         stage('Install ChefDK') {
