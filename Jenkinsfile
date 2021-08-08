@@ -13,8 +13,8 @@ pipeline {
                     if (chefdkExists) {
                         echo 'Skipping Chef install...already installed'
                     }else{
-                        sh 'wget https://packages.chef.io/files/stable/chefdk/3.9.0/ubuntu/16.04/chefdk_3.9.0-1_amd64.deb'
-                        sh 'sudo dpkg -i chefdk_3.9.0-1_amd64.deb'
+                        sh 'wget https://packages.chef.io/files/stable/chefdk/4.7.73/el/8/chefdk-4.7.73-1.el7.x86_64.rpm'
+                        sh 'sudo rpm -Uvh chefdk-4.7.73-1.el7.x86_64.rpm'
                     }
                 }
             }
